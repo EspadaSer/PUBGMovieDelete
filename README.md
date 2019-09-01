@@ -29,4 +29,4 @@ This program does not need installation
 
 ## Credits
 
-- Espada86
+- EspadaSer
