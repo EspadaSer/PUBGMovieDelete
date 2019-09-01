@@ -24,37 +24,28 @@ def GetProgramFiles64():
 
 # OPTIONS
 
-def options():
+def menu():
     print("Choose and option from the following:")
-    print("[1] Auto detect game files")
-    print("[2] Use the location from path.txt")
-    option = input()
-
-if option == 1:
-    auto()
-    delete()
-elif option == 2:
-    custom()
-    delete()
-else:
-    options()
-
+    print("[a] Use the location from path.txt")
+    print("[b] Auto detect game files")
+    
 # CONFIG FILE CHECK/CREATION
 
 def custom():
 
+    global folderpath
     config = configparser.RawConfigParser()
     configFilePath = r'path.txt'
 
     if not os.path.isfile(configFilePath):
         config['Settings'] = {'path' : 'C:\\Steam\\SteamApps\\common\\PUBG\\TslGame\\Content\\Movies'}
         config.write(open('path.txt', 'w'))
-        print("path.txt NOT found. File created with default path. If PUBG is installed in a different location edit path.txt and run the program again")
+        print("Path.txt NOT found. The file was created with default path. If PUBG is installed in a different location, edit path.txt and run the program again")
 
     if os.path.isfile(configFilePath):
         config.read(configFilePath)
-        folder_path = config.get('Settings', 'path')
-        print("path.txt found. Path: " + folder_path)
+        folderpath = config.get('Settings', 'path')
+        print("Path.txt found. Path: " + folderpath)
 
 def auto():
 
@@ -68,7 +59,8 @@ def auto():
     steampath =  winreg.QueryValueEx(key, "InstallPath")[0]
 
     # LOCATE THE ATUAL PUBG INSTALLATION FILES
-
+    
+    global folderpath
     acfpath = steampath + "\\SteamApps\\appmanifest_578080.acf"
 
     if os.path.isfile(acfpath):
@@ -108,3 +100,18 @@ def delete():
 
     input("Press ENTER to terminate this program")
     raise SystemExit(0)
+
+# WHILE LOOP
+
+option = "0"
+while option!= "a" and option!= "b":
+    menu()
+    option = input()
+
+if option == "a":
+    custom()
+    delete()
+    
+elif option == "b":
+    auto()
+    delete()
