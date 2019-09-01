@@ -4,7 +4,7 @@ A Python based application that deletes the PUBG game movies so that the game lo
 
 This program not only saves up your time every single time you run the game, it also helps you to join the game faster if you just had a crash to desktop or freeze and has to launch the game again. 
 
-## What does it do?
+## How does it work?
 
 The program simply removes the movie files of the game. These files are: "LicenseScreen.mp4", "LoadingScreen.mp4" and "LoadingScreen_Xbox.mp4".
 
