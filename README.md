@@ -2,7 +2,7 @@
 
 A Python based application that deletes the PUBG game movies so that the game loads faster.
 
-This program not only save up your time every single time you run the game, it also helps you to join the game faster if you just had a crash to desktop or freeze and has to launch the game again. 
+This program not only saves up your time every single time you run the game, it also helps you to join the game faster if you just had a crash to desktop or freeze and has to launch the game again. 
 
 ## What does it do?
 
