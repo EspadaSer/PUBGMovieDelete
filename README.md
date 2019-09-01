@@ -6,7 +6,7 @@ This program not only saves up your time every single time you run the game, it 
 
 ## What does it do?
 
-The program simply remove the movie files of the game. These files are: "LicenseScreen.mp4", "LoadingScreen.mp4" and "LoadingScreen_Xbox.mp4".
+The program simply removes the movie files of the game. These files are: "LicenseScreen.mp4", "LoadingScreen.mp4" and "LoadingScreen_Xbox.mp4".
 
 ## Installation / Usage
 
@@ -15,12 +15,17 @@ This program does not need installation
 - Download [latest PUBGMovieDelete from releases](https://github.com/EspadaSer/PUBGMovieDelete/releases)
 - Extract the files
 - Run PUBGMovieDelete.exe
-- A cmd windows should appear telling you if it could find and delete the desired files. Press any key to close the window.
+- A cmd window should appear.
+- Try option b first and see if it works. Otherwise choose option a and set up the actual path of your PUBG files.
+- Press ENTER to close the program
 
 ## Troubleshooting
 
 - You may need to run the program as an administrator depending on the version.
-- Depending on the version of PUBGMovieDelete you are using, the program will try to detect where your PUBG game files are located and it will delete the movie files. If for any reason it can not locate the game files, you will have to edit the *path.txt* file generated. This file is located in the same folder where *PUBGMovieDelete.exe* is. Just change the default path for the game to the actual path of your game installation. You will need to run the program again afterwards. Keep in mind that the program cannot delete the files if they were already deleted.
+- If you choose the option b, the program will try to automatically detect the location of your PUBG installation and delete the movie files. 
+- If autodetect did not work, you will have to use the custom location option. Run the program once and choose the option a. This will create the path.txt file in the same location of PUBGMovieDelete.exe. Close the program and edit path.txt with the actual path of your game install location. Then run PUBGMovieDelete.exe again and choose again the option a.  
+- Keep in mind that the program cannot delete the files if they were already deleted
+- Steam may download the movie files again when there is a game update. Simply run the program again when this happens.
 
 ## Credits
 
