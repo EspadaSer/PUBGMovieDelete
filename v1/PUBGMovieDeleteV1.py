@@ -14,5 +14,3 @@ for i in range(3):
         print("Deleted " + filepath)
     else:
         print("File not found " + filepath)
-    
-
