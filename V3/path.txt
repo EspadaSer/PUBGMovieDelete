@@ -1,0 +1,3 @@
+[Settings]
+path = C:\Steam\SteamApps\common\PUBG\TslGame\Content\Movies
+
