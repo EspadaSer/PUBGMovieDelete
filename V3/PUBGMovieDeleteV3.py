@@ -25,9 +25,9 @@ def GetProgramFiles64():
 # OPTIONS
 
 def menu():
-    print("Choose and option from the following:")
-    print("[a] Use the location from path.txt")
-    print("[b] Auto detect game files")
+    print("Choose an option from the following:")
+    print("[a] Use the location from path.txt.")
+    print("[b] Auto-detect game files.")
     
 # CONFIG FILE CHECK/CREATION
 
@@ -47,6 +47,8 @@ def custom():
         folderpath = config.get('Settings', 'path')
         print("Path.txt found. Path: " + folderpath)
 
+# AUTODETECT GAME LOCATION
+
 def auto():
 
     # READ REGISTRY TO LOCATE STEAM INSTALLATION
@@ -58,7 +60,7 @@ def auto():
         
     steampath =  winreg.QueryValueEx(key, "InstallPath")[0]
 
-    # LOCATE THE ATUAL PUBG INSTALLATION FILES
+    # LOCATE THE ACTUAL PUBG INSTALLATION FILES
     
     global folderpath
     acfpath = steampath + "\\SteamApps\\appmanifest_578080.acf"
