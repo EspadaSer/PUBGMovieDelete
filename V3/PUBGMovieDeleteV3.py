@@ -96,7 +96,7 @@ def delete():
             print("Deleted " + filepath)
         else:
             print("File not found " + filepath)
-            print("Maybe the file was already deleted")
+            #print("Maybe the file was already deleted")
 
     # PRESS KEY TO EXIT
 
