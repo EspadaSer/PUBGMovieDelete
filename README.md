@@ -2,7 +2,9 @@
 
 A Python based application that deletes the PUBG game movies so that the game loads faster.
 
-This program not only saves up your time every single time you run the game, it also helps you to join the game faster if you just had a crash to desktop or freeze and has to launch the game again. 
+This program does not provide you any ingame advantage or modify the actual game files in any way. No, you can not get banned from using this.
+
+The program not only saves up your time every single time you run the game, it also helps you to join the game faster if you just had a crash to desktop or freeze and has to launch the game again. 
 
 ![Demo](https://github.com/EspadaSer/PUBGMovieDelete/blob/master/Media/cmd3.gif)
 
